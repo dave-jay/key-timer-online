@@ -51,7 +51,7 @@
             <h3 id="myModalLabel">KEYTimer Log Viewer</h3>
         </div>
         <div class="modal-body" id="displaycontent">
-
+            Please wait..
 
 
         </div>

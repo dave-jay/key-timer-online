@@ -488,7 +488,6 @@ function diactivate()
    
 }
 
-
 function stopTimers(){
     var graceful = true
     stopWPMTimer(graceful);
@@ -497,21 +496,8 @@ function stopTimers(){
 
 
 function PrintData(div_id){
-    //alert($("#"+div_id).html());
     printMe=window.open();
     printMe.document.write($("#"+div_id).html());
     printMe.print();
     printMe.close();
 }
-
-
-
-
-//$(function(){
-//    $('#element_id').click(function(){
-//        printMe=window.open();
-//        printMe.document.write($('.terms_and_conditions').html());
-//        printMe.print();
-//        printMe.close();
-//    });
-//});
