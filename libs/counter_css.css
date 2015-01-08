@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+body{
+    font-family: 'Droid Sans', sans-serif;
+    /*font-family: 'Lily Script One', cursive;
+    font-family: 'Kite One', sans-serif;*/
+}
+textarea{
+     height: 500px;
+   line-height: 100%;
+    font-family: 'Tahoma', sans-serif;
+}
+
+    
+
+.none{
+    display:none;
+}
+.nav-tabs > .active > a#tabC1, .tab1Content, .nav-tabs  a#tabC1:hover {
+    background-color: #FFFF99;
+}
+.nav-tabs > .active > a#tabC2, .tab2Content, .nav-tabs  a#tabC2:hover {
+    background-color: #96cb7f;
+}
+.nav-tabs > .active > a#tabC3, .tab3Content, .nav-tabs  a#tabC3:hover {
+    background-color: #87CEFA;
+}
+
+
+.well{
+    border-radius: 0px;
+    border-top:0px none;
+}
+.nav-tabs{
+    border-bottom: 0px none;
+}
