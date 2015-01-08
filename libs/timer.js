@@ -203,7 +203,7 @@ function getendmessage()
     var currentVal = $("#txtcontent").val();
     var count=$("#wpmcount").html();
     var time=$("#Atime").html();
-    var  newval = currentVal + "\n" +count+"Character in"  +time+"Seconds";
+    var  newval = currentVal + "\n" +count+" Characters in "  +time+" Seconds"; 
 
     $("#txtcontent").val(newval);
 }
