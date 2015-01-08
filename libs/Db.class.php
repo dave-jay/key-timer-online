@@ -1,19 +1,18 @@
 <?php
 
 define('DB_HOST', 'localhost');
-define('DB_PASSWORD', 'keytime_timer');
-define('DB_UNAME', 'keytime_timer');
+define('DB_PASSWORD', '');
+define('DB_UNAME', 'root');
 define('DB_NAME', 'keytime_timer');
-
 
 /**
  * Database Class:
  * 
  * Normal DB class with singleton pattern
  * 
- * @author Hardik Shah <hardiks059@gmail.com>
+ * @author Dave Jay <dave.jay90@gmail.com>
  * @version 1.0
- * @package makeanofferapp
+ * @package KeyTimer
  * @since May 28, 2013
  * 
  */
@@ -23,7 +22,6 @@ class Db {
     private static $db;
     # holds link
     public $_link;
-
 
     # constructor
 
@@ -55,21 +53,21 @@ class Db {
         }
     }
 
-    function delete_query($table,$condition){
+    function delete_query($table, $condition) {
         $db = Db::__d();
         $db->query("delete from {$table} where {$condition} ");
         return mysql_affected_rows();
     }
-    
+
     /**
      * wrapper function for update query
-     * @author Hardik Shah
+     * @author Dave Jay
      * @since May 28, 2013
      * @param String $table
      * @param Array $array list of fields
      * @param String $where where condition
      * @return Integer return number rows updated
-     * @package makeanofferapp
+     * @package KeyTimer
      * 
      */
     function update_query($table, $fields, $condition) {
@@ -84,7 +82,7 @@ class Db {
             }
             $set_string = implode(",", $set_string);
             $query = " update {$table} set {$set_string} where {$condition} ";
-	    $db->query($query);
+            $db->query($query);
 
             return mysql_affected_rows();
         }
@@ -93,13 +91,13 @@ class Db {
 
     /**
      * wrapper function for insert query
-     * @author Hardik Shah
+     * @author Dave Jay
      * @since May 28, 2013
      * @param String $table
      * @param Array $array list of fields
 
      * @return Integer return number rows inserted
-     * @package makeanofferapp
+     * @package KeyTimer
      * 
      */
     function insert_query($table, $fields) {
@@ -114,11 +112,11 @@ class Db {
                 $value_string[] = " '{$field_value}' ";
             }
 
-            $fields_string = " ( `" .implode("`, `", array_keys($fields)) . "` ) ";
+            $fields_string = " ( `" . implode("`, `", array_keys($fields)) . "` ) ";
 
-            $value_string = " ( ".implode(",", $value_string)." ) ";
-            
-            $query = " INSERT INTO {$table} {$fields_string} values {$value_string}"; 
+            $value_string = " ( " . implode(",", $value_string) . " ) ";
+
+            $query = " INSERT INTO {$table} {$fields_string} values {$value_string}";
             $db->query($query);
 
             return mysql_insert_id();
@@ -126,7 +124,7 @@ class Db {
         return false;
     }
 
-    public function format_data($result, $field=NULL, $second_field=NULL, $third_field=NULL) {
+    public function format_data($result, $field = NULL, $second_field = NULL, $third_field = NULL) {
         $data_array = array();
         if ($result) {
             while ($array = mysql_fetch_assoc($result)) {
@@ -155,7 +153,6 @@ class Db {
 
 }
 
-
 function d($arr, $hideStyle = "block") {
     if (is_array($arr) || is_object($arr)) {
         print "<pre style='display:{$hideStyle}'>" . "...";
@@ -165,6 +162,7 @@ function d($arr, $hideStyle = "block") {
         print "<div class='debug' style='display:{$hideStyle}'>Debug:<br>$arr</div>";
     }
 }
+
 function back_trace() {
     $array = debug_backtrace();
     $output = 'Execution Backtrace:<br><ul>';
