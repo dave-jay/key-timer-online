@@ -10,15 +10,15 @@
         <link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href="libs/counter_css.css" rel="stylesheet">
         <script type="text/javascript">
-            $(document).ready(function(){
+            $(document).ready(function() {
 <?php
 session_start();
 if (!isset($_SESSION['email']) || $_SESSION['email'] == '') {
     ?>
-                $('#btnlogin').click();
-                $('#btnlogin').hide();
-<?php } ?> 
-    });
+                    $('#btnlogin').click();
+                    $('#btnlogin').hide();
+<?php } ?>
+            });
         </script>
     </head>
     <body>
@@ -55,9 +55,9 @@ if (!isset($_SESSION['email']) || $_SESSION['email'] == '') {
                 <div class="span12">
                     <div class="tabbable">
                         <ul class="nav nav-tabs" style="margin-bottom:0px">
-                            <li class="active"><a onclick="stopTimers(),focuspracticeArea()" id="tabC1" href="#tab1" data-toggle="tab" style="background-color: #FFFF99;">Practice Area</a></li>
-                            <li><a href="#tab2" onclick="stopTimers(),focusalphatimer()" id="tabC2" data-toggle="tab" style="background-color: #96CB7F;">Alpha Timer</a></li>
-                            <li><a href="#tab3" onclick="stopTimers(),focuswpm()" id="tabC3" data-toggle="tab" style="background-color: #87CEFA;">Words Per Minute</a></li>
+                            <li class="active"><a onclick="stopTimers(), focuspracticeArea()" id="tabC1" href="#tab1" data-toggle="tab" style="background-color: #FFFF99;">Practice Area</a></li>
+                            <li><a href="#tab2" onclick="stopTimers(), focusalphatimer()" id="tabC2" data-toggle="tab" style="background-color: #96CB7F;">Alpha Timer</a></li>
+                            <li><a href="#tab3" onclick="stopTimers(), focuswpm()" id="tabC3" data-toggle="tab" style="background-color: #87CEFA;">Words Per Minute</a></li>
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane active" id="tab1">

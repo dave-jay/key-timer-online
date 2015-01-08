@@ -1,0 +1,39 @@
+
+1. Word Per Minute is not calculating correctly. I typed a 40 WPM paragraph on the old KEYtimer and the web one. The web version showed 31 WPM. I typed a 44 WPM paragraph and it calculated as 34. T typed a 50 WPM paragraph and it calculated as 38 WPM.
+
+2. Ability to save reports to the desktop. Since they'll have limited uses (correct?), it would be great if they could save it perhaps as a PDF. Currently, the only option seems to be to copy and paste into a document, which means the results could be manipulated.
+
+3. Will there be the ability to review previous session's reports each time you log back on?
+
+4. When viewing a long log, the Print Button cannot be accessed -- even with the slide bar all the way down. This seems to be dependent upon the size of your computer screen. On my notebook, I had to rotate my graphics 90 degrees in order to be able to access the Print Button for a long log. It happened on more than one module. This can probably be eliminated by being able to move the viewer screen with the mouse and/or have it set so that the slide bar can keep moving until you're at the very end of what's being viewed (like e-mail viewing allows). I hope what I'm trying to express is clear.
+
+5. Each time you go back to the Practice area (even without typing anything new), it creates an additonal log with the previous practice information on it, but with a new time stamp.
+
+6. Ability to View All reports -- nothing generates. It only lets you view each individual module. Viewing All should allow you to see the information from each log. This includes everything that was typed and the results.
+
+7. I couldn't get the print all logs function to work.
+
+8. Maybe add instructions that the "ESC" or "END" keys can be used to stop timing or the "Stop" button at the bottom. The Escape key is the quicker option, because every computer has one and pretty much everyone knows where it is. Whereas the "End" key is not on every computer.
+
+9. The Space Bar starts timing the first time in Alpha Timer and Words Per Minute, but the "Start" button has to be used for timings taking place after the initial one; otherwise it will let you type, but it will keep beeping. It takes a bit of time to go from mouse to typing.Space Bar allows you to immediately start typing. Can we add instructions that the Space Bar can be used or the "Start" button? It can be added to About.
+
+10. Will we have the option to allow backspacing? Our current KEYtimer uses "Ctrl B" to allow it to be off. And the log shows, "backspace enabled". This also shows on the log review and printout. We generally only disclose this information to instructors.
+
+11. Change "Character" to "Characters" (instead of singular) and fix spacing on the results line for the Alpha Timer.
+
+12. Allows continued timing after you've stopped in Alpha Timer. It continues to calculate (although incorrectly). It does beep to tell you something is wrong.
+
+13. Word Per Minute timing beeps are off. Ex. 4 minutes yieled 3 beeps instead of 4. 5 and 6 minutes yieled 2 beeps instead of 5 and 6 beeps, respectively. 7-10 minutes yielded 3 beeps instead of one for each minute.
+
+14. This is not part of our current KEYtimer, but would be a great feature to add to the WPM function: Ability to choose how many minutes you wish to type and beep only at that interval. This would be less distracting than our current method of multiple beeps (see 11 above). Ex. 1 minute; 3 minutes; 5 minutes; 7 minutes; 10 minutes; 15 minutes; 20 minutes; 30 minutes. This can be done with a drop down menu or buttons.
+
+15. When using the WPM module, only the elapsed time shows, but the WPM results need to show also.
+
+16. The Print option should allow all of the typed data and results to print -- not just the results.
+
+17. Can you change how the Alpha Timer and Word Per Minute results display to show the number before the minutes and seconds instead of after?
+Ex. You typed 44 Characters in 1 minute 3 seconds instead. You typed 36 Words Per Minute in 7 minutes 10 seconds.
+
+18. Printed results should include the user's name and the log name.
+
+19. Each log should include everything that was typed and the results for each session.
